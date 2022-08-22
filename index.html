@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 1fr 3fr 3fr 2fr 1.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "my-header my-header my-header"
+    "my-image my-image my-image"
+    "my-side my-main my-main"
+    "my-side banner banner"
+    "my-side ad img2"
+    "my-footer my-footer my-footer";
+
+height:700px;
+
+}
+
+.my-header { grid-area: my-header;background-color:yellow; }
+
+.my-image { grid-area: my-image; }
+
+.my-side { grid-area: my-side; }
+
+.my-main { grid-area: my-main; }
+
+.banner { grid-area: banner; }
+
+.ad { grid-area: ad; }
+
+.img2 { grid-area: img2; }
+
+.my-footer { grid-area: my-footer; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.my-header,.my-image,.my-side,.my-main,.banner,.ad,.img2,.my-footer{
+text-align:center;
+border:2px solid red;
+
+}
+
+
+
+
+
+</style>
+
+
+
+</head>
+
+
+
+
+
+
+
+
+<body >
+
+
+
+<div class="container">
+  <div class="my-header">HEADER</div>
+  <div class="my-image">IMAGE1</div>
+  <div class="my-side">SIDEBAR</div>
+  <div class="my-main">MAIN</div>
+  <div class="banner">BANNER</div>
+  <div class="ad">AD</div>
+  <div class="img2">IAMGE2</div>
+  <div class="my-footer">FOOTER</div>
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
